@@ -1,19 +1,16 @@
 from django.shortcuts import render
 
-# Create your views here.
-from django.http import HttpResponse
-
 def inicio(request):
-    return HttpResponse("Vista inicio")
+    return render(request, "AppPractica/index.html")
 
 def cursos(request):
-    return HttpResponse("Vista cursos")
+    return render(request, "AppPractica/cursos.html")
 
 def profesores(request):
-    return HttpResponse("Vista profesores")
+    return render(request, "AppPractica/profesores.html")
 
 def estudiantes(request):
-    return HttpResponse("Vista estudiantes")
+    return render(request, "AppPractica/estudiantes.html")
 
 def entregables(request):
-    return HttpResponse("Vista entregables")
+    return render(request, "AppPractica/entregables.html")
